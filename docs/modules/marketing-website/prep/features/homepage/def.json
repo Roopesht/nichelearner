@@ -1,0 +1,18 @@
+{
+  "feature": "homepage",
+  "mocks": [
+    {
+      "name": "Homepage Desktop",
+      "file": "mocks/homepage-desktop.txt"
+    }
+  ],
+  "db_tables": [
+    "the",
+    "1.",
+    "2.",
+    "no"
+  ],
+  "api_endpoints": [],
+  "components": [],
+  "steps": []
+}

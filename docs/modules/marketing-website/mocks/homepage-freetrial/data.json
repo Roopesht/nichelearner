@@ -1,0 +1,102 @@
+{
+  "appState": {
+    "currentScreen": "homepage",
+    "userEmail": null,
+    "userName": null,
+    "verificationEmail": null,
+    "utm": {
+      "source": "organic",
+      "medium": null,
+      "campaign": null
+    }
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Get Honest Feedback on Your JEE Prep",
+      "subheading": "NicheLearner adapts to your level and shows you exactly what to study next—no guessing, no wasted time.",
+      "ctaText": "Start Free Trial",
+      "trustPoints": [
+        "No credit card required",
+        "30-day free access",
+        "Cancel anytime"
+      ]
+    },
+    "howItWorks": [
+      {
+        "icon": "✓",
+        "headline": "Personalized Assessment",
+        "description": "Our adaptive quizzes scale to your level—hard questions if you're strong, easier ones to build foundations if you're struggling. You get honest feedback, not a generic score."
+      },
+      {
+        "icon": "≣",
+        "headline": "See How Topics Connect",
+        "description": "Physics concepts you're learning are connected to Chemistry and Math. We show you these connections so you understand the big picture and solve problems faster."
+      },
+      {
+        "icon": "⧉",
+        "headline": "Personalized Roadmap",
+        "description": "Based on your quiz results, get a ranked list of exactly what to study next. No distractions, no irrelevant content—just your gaps."
+      }
+    ],
+    "studentSection": {
+      "headline": "Are You Prepared? Really?",
+      "body": "Many students study for months and still feel uncertain about their readiness for JEE Mains. Our platform gives you honest, real-time feedback on exactly where you stand and what to focus on. No more wasted time on topics you've already mastered. Get personalized guidance, not generic content."
+    },
+    "parentSection": {
+      "headline": "Track Your Child's Real Progress",
+      "body": "You want your child to succeed in JEE, but it's hard to know if they're truly prepared or just going through the motions. NicheLearner gives you and your child honest, transparent feedback on preparation level, knowledge gaps, and a clear study roadmap. No guesswork, no inflated scores. Just real data."
+    },
+    "trustMarkers": [
+      {
+        "icon": "🔒",
+        "headline": "Your Data is Safe",
+        "body": "We follow OWASP Top 10 security standards and encrypt all student data in transit and at rest."
+      },
+      {
+        "icon": "👁",
+        "headline": "Privacy First",
+        "body": "We never sell or share your data. We comply with data protection standards for educational apps serving minors."
+      },
+      {
+        "icon": "💰",
+        "headline": "No Hidden Costs",
+        "body": "Free trial truly means free—no credit card, no upsells, no sneaky charges. You control when and if you upgrade."
+      }
+    ],
+    "collegeSection": {
+      "enabled": true,
+      "headline": "Help Your Students Prepare Better",
+      "body": "Colleges can now offer NicheLearner to their student body as part of test-prep offerings. Personalized assessment and adaptive guidance help your students succeed. Easy to deploy, powerful results."
+    }
+  },
+  "signup": {
+    "form": {
+      "email": "",
+      "name": "",
+      "password": "",
+      "agreeToTerms": false
+    },
+    "validation": {
+      "email": { "valid": null, "error": "" },
+      "name": { "valid": null, "error": "" },
+      "password": { "valid": null, "error": "", "strength": "weak" }
+    },
+    "isSubmitting": false,
+    "serverError": "",
+    "passwordRequirements": {
+      "minLength": false,
+      "hasUppercase": false,
+      "hasLowercase": false,
+      "hasNumber": false
+    }
+  },
+  "verification": {
+    "email": null,
+    "status": null,
+    "resendCount": 0,
+    "nextResendTime": null,
+    "trialStartDate": null,
+    "trialEndDate": null,
+    "message": null
+  }
+}

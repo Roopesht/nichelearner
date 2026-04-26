@@ -1,0 +1,32 @@
+{
+  "feature": "free-trial-signup-form",
+  "mocks": [
+    {
+      "name": "Signup Form",
+      "file": "mocks/signup-form.txt"
+    },
+    {
+      "name": "Verification Pending",
+      "file": "mocks/verification-pending.txt"
+    }
+  ],
+  "db_tables": [
+    "|",
+    "|--------|------|-------------|-------|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|",
+    "|"
+  ],
+  "api_endpoints": [
+    "/api/auth/signup"
+  ],
+  "components": [],
+  "steps": []
+}

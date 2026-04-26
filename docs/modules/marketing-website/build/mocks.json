@@ -1,0 +1,13 @@
+[
+  {
+    "id": "homepage-freetrial",
+    "name": "Homepage & Freetrial",
+    "description": "Mocks of the home page and free trial.",
+    "target_screen": "home, and free trail",
+    "features": [
+      "free-trial-signup-form",
+      "homepage"
+    ],
+    "fidelity": "mid"
+  }
+]

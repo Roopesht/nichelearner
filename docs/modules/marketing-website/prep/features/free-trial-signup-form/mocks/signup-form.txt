@@ -1,0 +1,49 @@
+PATH: /signup
+CONTEXT: Marketing Website → Free Trial Signup
+
+┌────────────────────────────────────────────────────────┐
+│ NicheLearner                    [For Institutions] [Login]│
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│            Start your free trial                      │
+│         Get honest feedback on your prep             │
+│    No credit card required. 30-day free access.     │
+│                                                        │
+│   ┌──────────────────────────────────────────────┐   │
+│   │                                              │   │
+│   │ Email address *                             │   │
+│   │ [____________________________________]      │   │
+│   │                                              │   │
+│   │ Full name *                                 │   │
+│   │ [____________________________________]      │   │
+│   │                                              │   │
+│   │ Password *                                  │   │
+│   │ [________________________] [👁 Toggle]      │   │
+│   │ Strength: Weak                              │   │
+│   │ • At least 8 characters                     │   │
+│   │ • Uppercase, lowercase, and a number       │   │
+│   │                                              │   │
+│   │ ☐ I agree to Terms & Privacy Policy        │   │
+│   │                                              │   │
+│   │         [Start Trial] (disabled)            │   │
+│   │                                              │   │
+│   │    ✓ No credit card required                │   │
+│   │    ✓ 30-day free trial                      │   │
+│   │    ✓ Cancel anytime                         │   │
+│   │                                              │   │
+│   └──────────────────────────────────────────────┘   │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ Privacy | Terms | Contact Us | FAQ                    │
+│ © 2026 NicheLearner. All rights reserved.            │
+└────────────────────────────────────────────────────────┘
+
+NOTES:
+- Form width: 400px (desktop), 90vw (mobile)
+- Real-time validation on blur for email, name, password
+- Email validation includes uniqueness check vs API
+- Password strength updates as user types
+- Submit button enabled only when all fields valid + terms checked
+- Form submission disabled during API request
+- Placeholder text shown in input fields
+- Email verification tokens are 24-hour limited

@@ -1,0 +1,44 @@
+PATH: /verify-email (after form submit)
+CONTEXT: Free Trial Signup → Email Verification
+
+┌────────────────────────────────────────────────────────┐
+│ NicheLearner                    [For Institutions] [Login]│
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│                                                        │
+│            ✓ Check your email                         │
+│                                                        │
+│   ┌──────────────────────────────────────────────┐   │
+│   │                                              │   │
+│   │ We've sent a verification link to            │   │
+│   │ student@example.com                          │   │
+│   │                                              │   │
+│   │ Click the link to activate your trial.      │   │
+│   │                                              │   │
+│   │ You should receive the email in a few       │   │
+│   │ seconds. Your trial begins once you verify  │   │
+│   │ your email.                                  │   │
+│   │                                              │   │
+│   │ Didn't see the email?                        │   │
+│   │ • Check your spam folder                     │   │
+│   │ • [Resend verification email] (00:42)       │   │
+│   │                                              │   │
+│   │ [Back to home]                              │   │
+│   │                                              │   │
+│   └──────────────────────────────────────────────┘   │
+│                                                        │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ Privacy | Terms | Contact Us | FAQ                    │
+│ © 2026 NicheLearner. All rights reserved.            │
+└────────────────────────────────────────────────────────┘
+
+NOTES:
+- Form replaced with success message
+- Resend button debounced: disabled for 60 seconds, shows countdown
+- Max 3 resend attempts per hour (error if exceeded)
+- Original form data cleared from memory/session
+- Email address displayed (partially masked for security not needed here)
+- User can navigate to /login if account already verified
+- Countdown timer updates every second
+- User cannot proceed to product until email verified

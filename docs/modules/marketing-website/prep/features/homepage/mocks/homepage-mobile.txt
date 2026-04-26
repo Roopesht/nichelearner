@@ -1,0 +1,139 @@
+PATH: / (Homepage - Mobile 375px)
+CONTEXT: Marketing Website Landing Page (Mobile)
+
+┌──────────────────────────────┐
+│ [☰] NicheLearner        [👤] │
+├──────────────────────────────┤
+│                              │
+│   Get Honest Feedback on     │
+│   Your JEE Prep              │
+│                              │
+│ NicheLearner adapts to your  │
+│ level and shows exactly what │
+│ to study next.               │
+│                              │
+│  [Start Free Trial]          │
+│                              │
+│ ✓ No credit card required    │
+│ ✓ 30-day free access         │
+│ ✓ Cancel anytime             │
+│                              │
+├──────────────────────────────┤
+│                              │
+│   How NicheLearner Works     │
+│                              │
+│ ┌────────────────────────┐   │
+│ │ ✓ Personalized         │   │
+│ │ Assessment             │   │
+│ │                        │   │
+│ │ Adaptive quizzes that  │   │
+│ │ scale to your level.   │   │
+│ │ Honest feedback.       │   │
+│ └────────────────────────┘   │
+│                              │
+│ ┌────────────────────────┐   │
+│ │ ≣ See How Topics       │   │
+│ │ Connect                │   │
+│ │                        │   │
+│ │ Physics, Chemistry &   │   │
+│ │ Math linked. Understand│   │
+│ │ big picture, solve     │   │
+│ │ faster.                │   │
+│ └────────────────────────┘   │
+│                              │
+│ ┌────────────────────────┐   │
+│ │ ⧉ Personalized Roadmap│   │
+│ │                        │   │
+│ │ Based on quiz results, │   │
+│ │ get ranked topics to   │   │
+│ │ study next. No wasted  │   │
+│ │ time.                  │   │
+│ └────────────────────────┘   │
+│                              │
+├──────────────────────────────┤
+│                              │
+│        For Students          │
+│                              │
+│  Are You Prepared? Really?   │
+│                              │
+│  Many students study for     │
+│  months and feel uncertain.  │
+│  We give honest feedback on  │
+│  where you stand. No wasted  │
+│  time on mastered topics.    │
+│  Get personalized guidance.  │
+│                              │
+│ [Start free trial now]       │
+│                              │
+├──────────────────────────────┤
+│                              │
+│       For Parents            │
+│                              │
+│  Track Your Child's Progress │
+│                              │
+│  Know if your child is truly │
+│  prepared. We give feedback  │
+│  on prep level, knowledge    │
+│  gaps, and study roadmap. No │
+│  guesswork, just real data.  │
+│                              │
+│ [Help child get started]     │
+│                              │
+├──────────────────────────────┤
+│                              │
+│  Why You Can Trust Us        │
+│                              │
+│  🔒 Your Data is Safe        │
+│  OWASP Top 10, encryption    │
+│  [Security Policy]           │
+│                              │
+│  👁 Privacy First            │
+│  Never sell data, protects   │
+│  minors. [Read Privacy]      │
+│                              │
+│  💰 No Hidden Costs          │
+│  True free—no card, no       │
+│  upsells. [See Pricing]      │
+│                              │
+├──────────────────────────────┤
+│                              │
+│  Ready to Get Honest         │
+│  Feedback?                   │
+│                              │
+│  [Start Free Trial]          │
+│                              │
+│  No credit card. 30 days     │
+│  free. Cancel anytime.       │
+│                              │
+├──────────────────────────────┤
+│                              │
+│ For Colleges & Institutions  │
+│                              │
+│  Help Your Students Prepare  │
+│  Better                      │
+│                              │
+│  Colleges can offer          │
+│  NicheLearner to their       │
+│  student body. Easy to       │
+│  deploy, powerful results.   │
+│                              │
+│ [Learn college partnerships] │
+│                              │
+├──────────────────────────────┤
+│ Privacy | Terms | Contact    │
+│ © 2026 NicheLearner          │
+└──────────────────────────────┘
+
+NOTES:
+- Mobile-first layout: 375px viewport width
+- Navigation: hamburger menu [☰] on left, login [👤] on right
+- Full-width content with 12px horizontal padding
+- Single-column stacked layout for all sections
+- Card grid becomes single column (each card full-width)
+- Trust markers: single column on mobile
+- Button touch targets: min 44x44px
+- Hero section: 50vh height on mobile
+- Typography: slightly larger for readability
+- Footer: single column, condensed spacing
+- All CTAs are full-width buttons on mobile
+- Margins/padding reduced: 8px vertical between sections

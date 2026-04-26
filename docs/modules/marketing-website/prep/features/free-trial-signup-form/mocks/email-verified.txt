@@ -1,0 +1,43 @@
+PATH: /verify-email?token=abc123xyz789
+CONTEXT: Email Verification Link Clicked → Success
+
+┌────────────────────────────────────────────────────────┐
+│ NicheLearner                    [For Institutions] [Login]│
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│                                                        │
+│            ✓ Email verified!                          │
+│                                                        │
+│   ┌──────────────────────────────────────────────┐   │
+│   │                                              │   │
+│   │ Your trial is now active.                   │   │
+│   │                                              │   │
+│   │ Trial Duration:                              │   │
+│   │ Start: April 26, 2026                        │   │
+│   │ End: May 26, 2026 (30 days)                 │   │
+│   │                                              │   │
+│   │ You can now log in to NicheLearner and      │   │
+│   │ start your adaptive quiz experience.        │   │
+│   │                                              │   │
+│   │       [Go to Platform]                       │   │
+│   │                                              │   │
+│   │       [Back to Home]                         │   │
+│   │                                              │   │
+│   └──────────────────────────────────────────────┘   │
+│                                                        │
+│ (Auto-redirect to /login in 3 seconds...)            │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ Privacy | Terms | Contact Us | FAQ                    │
+│ © 2026 NicheLearner. All rights reserved.            │
+└────────────────────────────────────────────────────────┘
+
+NOTES:
+- Token validated server-side, account status changes from
+  "trial_pending_verification" to "trial_active"
+- Trial end date calculated: 30 days from verification date
+- User session created; can navigate to /login immediately
+- Auto-redirect to login page after 3 seconds
+- Token consumed; subsequent clicks show "already verified" message
+- Expires at token > 24 hours: shows "link expired" error screen
+- Trial countdown begins; reminder email sent 3 days before expiry

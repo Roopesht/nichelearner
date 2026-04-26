@@ -1,0 +1,115 @@
+PATH: / (Homepage)
+CONTEXT: Marketing Website Landing Page
+
+┌────────────────────────────────────────────────────────┐
+│ NicheLearner              [For Institutions] [Pricing] [Login]│
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│              Get Honest Feedback on Your JEE Prep     │
+│                                                        │
+│  NicheLearner adapts to your level and shows you     │
+│       exactly what to study next—no guessing.        │
+│                                                        │
+│          [Start Free Trial]                           │
+│                                                        │
+│  ✓ No credit card required | 30-day free access     │
+│  ✓ Cancel anytime                                    │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│               How NicheLearner Works                  │
+│                                                        │
+│ ┌──────────────┐  ┌──────────────┐  ┌──────────────┐ │
+│ │ ✓            │  │ ≣            │  │ ⧉            │ │
+│ │ Personalized │  │ See How      │  │ Personalized │ │
+│ │ Assessment   │  │ Topics       │  │ Roadmap      │ │
+│ │              │  │ Connect      │  │              │ │
+│ │ Adaptive     │  │              │  │ Based on     │ │
+│ │ quizzes that │  │ Physics,     │  │ quiz results,│ │
+│ │ scale to     │  │ Chemistry &  │  │ get ranked   │ │
+│ │ your level.  │  │ Math linked. │  │ topics to    │ │
+│ │ Honest       │  │ Understand   │  │ study next. │ │
+│ │ feedback.    │  │ big picture. │  │ No wasted   │ │
+│ │              │  │              │  │ time.        │ │
+│ └──────────────┘  └──────────────┘  └──────────────┘ │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│                   For Students                        │
+│                                                        │
+│  Are You Prepared? Really?                            │
+│                                                        │
+│  Many students study for months and still feel       │
+│  uncertain about readiness for JEE Mains. Our       │
+│  platform gives honest, real-time feedback on       │
+│  exactly where you stand. No wasted time on          │
+│  mastered topics. Get personalized guidance.         │
+│                                                        │
+│  [Start your free trial now]                         │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│                   For Parents                         │
+│                                                        │
+│  Track Your Child's Real Progress                    │
+│                                                        │
+│  Know if your child is truly prepared or going       │
+│  through motions. NicheLearner gives transparent     │
+│  feedback on prep level, knowledge gaps, and         │
+│  clear study roadmap. No guesswork, just real        │
+│  data so you're confident they're on track.          │
+│                                                        │
+│  [Help your child get started]                       │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│               Why You Can Trust NicheLearner          │
+│                                                        │
+│  🔒 Your Data    │  👁 Privacy      │  💰 No Hidden  │
+│  is Safe         │  First           │  Costs         │
+│  ───────────────  ───────────────    ──────────────  │
+│  OWASP Top 10    │  Never sell/share│  True free—no │
+│  standards,      │  data. Complies  │  card, no     │
+│  encryption at   │  with data       │  upsells, you │
+│  rest & transit. │  protection for  │  control when │
+│  [Security]      │  minors.         │  to upgrade.  │
+│                  │  [Privacy]       │  [Pricing]    │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│        Ready to Get Honest Feedback?                  │
+│                                                        │
+│         [Start Free Trial]                            │
+│                                                        │
+│  No credit card. 30 days free. Cancel anytime.       │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│            For Colleges & Institutions                │
+│                                                        │
+│   Help Your Students Prepare Better                  │
+│                                                        │
+│   Colleges can offer NicheLearner to their student   │
+│   body. Personalized assessment & adaptive guidance  │
+│   help students succeed. Easy to deploy, powerful    │
+│   results.                                            │
+│                                                        │
+│ [Learn about college partnerships] [Trusted by 50+] │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ Privacy Policy | Terms of Service | Contact Us | FAQ │
+│ © 2026 NicheLearner. All rights reserved.            │
+└────────────────────────────────────────────────────────┘
+
+NOTES:
+- Max-width container: 1200px, centered on desktop
+- Hero section: full-width background with padding
+- Three-column card grid for "How It Works"
+- Persona-specific sections: student & parent messaging
+- Trust markers: 3-column grid (desktop), 2-column (tablet)
+- Multiple CTAs on page, all link to /signup form
+- UTM parameters & ref= params preserved in links
+- Icons are 24px-40px depending on context
+- All external links open in new tab/window
+- Google Analytics tracks: homepage_view, homepage_cta_click,
+  homepage_college_link_click

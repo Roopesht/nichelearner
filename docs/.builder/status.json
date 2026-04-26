@@ -1,0 +1,142 @@
+{
+  "project": {
+    "name": "Niche learner",
+    "slug": "niche-learner",
+    "project_root": "/Users/roopesh/projects/nichelearner",
+    "docs_root": "/Users/roopesh/projects/nichelearner/docs",
+    "created_at": "2026-04-26T06:09:36.197971+00:00"
+  },
+  "modules": [
+    {
+      "name": "marketing website",
+      "slug": "marketing-website",
+      "priority": "HIGH",
+      "description": "This is the marketing website for the application that will be created.",
+      "stages": {
+        "prep": {
+          "requirements": {
+            "status": "approved"
+          },
+          "user_flows": {
+            "status": "approved"
+          },
+          "design_system": {
+            "status": "approved"
+          },
+          "content": {
+            "status": "approved"
+          },
+          "validation": {
+            "status": "approved"
+          },
+          "module_md": {
+            "status": "approved"
+          }
+        },
+        "build": {
+          "foundation": {
+            "status": "not_started"
+          },
+          "tranches": []
+        },
+        "post": {
+          "backup": {
+            "status": "not_started"
+          },
+          "monitoring": {
+            "status": "not_started"
+          },
+          "security": {
+            "status": "not_started"
+          },
+          "cicd": {
+            "status": "not_started"
+          },
+          "support": {
+            "status": "not_started"
+          },
+          "audit": {
+            "status": "not_started"
+          },
+          "scalability": {
+            "status": "not_started"
+          }
+        }
+      },
+      "features": [
+        {
+          "slug": "college-partnership-inquiry-form",
+          "name": "College Partnership Inquiry Form",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "college-partnerships-page",
+          "name": "College Partnerships Page",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "contact-support-form",
+          "name": "Contact Support Form",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "email-verification-flow",
+          "name": "Email Verification Flow",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "free-trial-signup-form",
+          "name": "Free Trial Signup Form",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "homepage",
+          "name": "Homepage",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "mobile-responsive-design",
+          "name": "Mobile Responsive Design",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "trial-access-management-system",
+          "name": "Trial Access Management System",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "trial-source-attribution-system",
+          "name": "Trial Source Attribution System",
+          "description": "",
+          "priority": "MEDIUM"
+        },
+        {
+          "slug": "trust-and-security-section",
+          "name": "Trust And Security Section",
+          "description": "",
+          "priority": "MEDIUM"
+        }
+      ]
+    }
+  ],
+  "focus_module": "marketing-website",
+  "solution": {
+    "solution": {
+      "status": "approved"
+    },
+    "solution_personas": {
+      "status": "approved"
+    },
+    "solution_context": {
+      "status": "approved"
+    }
+  }
+}
