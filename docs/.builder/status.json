@@ -37,7 +37,10 @@
           "foundation": {
             "status": "not_started"
           },
-          "tranches": []
+          "tranches": [],
+          "tech_stack": {
+            "status": "approved"
+          }
         },
         "post": {
           "backup": {

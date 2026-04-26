@@ -1,0 +1,63 @@
+{
+  "module": "marketing-website",
+  "version": "1.0",
+  "generated": "2026-04-26",
+  "rationale": "Fast, simple marketing website + trial signup form. Minimal dependencies: Vue 3 for mobile-responsive UI, Gin for lightweight REST API, MySQL for signup/trial tracking. AWS infrastructure as specified in requirements. No heavy state management, caching, or background jobs needed for MVP.",
+  "frontend": {
+    "framework": "Vue 3 (LTS: ^3.4.x)",
+    "language": "TypeScript (^5.3.x)",
+    "bundler": "Vite (^5.0.x) — fast dev server, minimal config",
+    "styling": "Tailwind CSS (^3.4.x) — utility-first, mobile-first by default",
+    "components": "Headless UI / Vue Headless Component Library (for accessible forms/buttons/modals) OR hand-rolled with Tailwind classes",
+    "forms": "VeeValidate (^4.12.x) — schema-based validation with Zod",
+    "http": "axios (^1.6.x) — simple Promise-based HTTP client for trial signup API calls",
+    "routing": "Vue Router (^4.2.x) — for marketing homepage, college partners page, FAQ, etc.",
+    "build": "Deployed to AWS S3 + CloudFront (static assets, spa-mode routing via 404 redirect to index.html)"
+  },
+  "backend": {
+    "framework": "Gin Web Framework (^1.9.x) — lightweight REST API for trial signup, auth, tracking",
+    "language": "Go (^1.21.x) — compiled, statically typed, minimal runtime overhead",
+    "orm": "GORM (^1.25.x) — Go ORM for MySQL operations (signup records, trial tracking)",
+    "authentication": "JWT (via go-jwt library, ^4.5.x) — stateless, signed tokens for trial session validation",
+    "validation": "go-playground/validator (^10.15.x) — struct-based request validation",
+    "middleware": "Built-in Gin middleware for CORS, request logging, error handling",
+    "logging": "Structured logging (zap or built-in log package) for debugging trial signup flow"
+  },
+  "database": {
+    "primary": "MySQL 8.0 (AWS RDS, Multi-AZ for trial data durability)",
+    "migrations": "golang-migrate (^4.16.x) OR GORM AutoMigrate for schema versioning",
+    "cache": "Not required for MVP — session/trial state stored in MySQL. Redis can be added post-launch if trial validation becomes a bottleneck.",
+    "backup": "AWS RDS automated backups (daily snapshots, 30-day retention)"
+  },
+  "hosting": {
+    "frontend": "AWS S3 (static website hosting) + CloudFront (CDN, SSL/TLS, edge caching)",
+    "backend": "AWS EC2 (t3.medium or ECS Fargate for container-based deployment) — serves /api/* endpoints",
+    "database": "AWS RDS MySQL 8.0 (managed database, automated backups, Multi-AZ failover)",
+    "load_balancer": "AWS Application Load Balancer (ALB) in front of backend for HA and SSL termination"
+  },
+  "integrations": {
+    "email": "AWS SES (Simple Email Service) — for trial signup confirmation and college partner inquiries",
+    "analytics": "Google Analytics 4 OR Amazon CloudWatch for signup funnel tracking and visitor metrics (optional MVP, required for success measurement per requirements)",
+    "error_tracking": "AWS CloudWatch Logs or Sentry — for backend error monitoring and debugging",
+    "secrets_management": "AWS Secrets Manager — for database credentials, API keys, JWT signing key",
+    "monitoring": "AWS CloudWatch (metrics, alarms) — monitor trial signup rate, API latency, database health"
+  },
+  "security": {
+    "owasp_top_10": "Applied throughout: input validation (forms + backend), SQL injection prevention (GORM ORM), XSS mitigation (Vue templating), CSRF tokens (if needed), HTTPS only, secure headers (Content-Security-Policy, X-Frame-Options)",
+    "authentication": "JWT tokens (stateless); trial access validated on each request",
+    "trial_revocation": "Backend logic to expire trial tokens at signup.trial_expires_at; frontend redirects to login on 401 response",
+    "data_privacy": "Encrypt PII in transit (TLS) and at rest (AWS RDS encryption); comply with Indian student data protection standards (specifics per product team confirmation)"
+  },
+  "deployment": {
+    "frontend_ci_cd": "GitHub Actions → build with Vite → upload to S3 → invalidate CloudFront cache",
+    "backend_ci_cd": "GitHub Actions → build Go binary → push Docker image to AWS ECR → deploy to ECS/EC2",
+    "database_migrations": "Run golang-migrate before backend deployment to ensure schema is in sync",
+    "infrastructure_as_code": "Terraform (optional but recommended) — define S3, CloudFront, RDS, ALB, security groups"
+  },
+  "open_questions": [
+    "College partnership referral mechanism (direct link, QR code, email campaign) — affects tracking implementation detail",
+    "Trial duration (30 days vs. 1 calendar month) — affects trial_expires_at calculation",
+    "India-specific compliance libraries or frameworks (data protection, payment if applicable) — to be confirmed",
+    "Affiliate tracking structure (UTM params, custom referral codes) — affects signup form and analytics"
+  ]
+}
