@@ -1,0 +1,4 @@
+table_name,purpose,important_fields
+signups,Core trial signup records with user type and contact info,id; email; name; user_type; phone; created_at; updated_at
+colleges,Institutional partners (colleges/coaching centers) for referral tracking and partnership management,id; name; contact_email; referral_code; institution_type; status; created_at; updated_at
+signup_sources,Attribution tracking: records how each signup was acquired (organic/affiliate/college referral/direct),id; signup_id; source_type; source_identifier; utm_source; utm_medium; utm_campaign; created_at

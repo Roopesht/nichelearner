@@ -1,0 +1,51 @@
+{
+  "table": "signups",
+  "instance": "mysql",
+  "purpose": "Core trial signup records: email, name, user type (student/parent/educator), and signup timestamp. Serves as the entry point for all new users from the marketing website.",
+  "important_fields": [
+    {
+      "name": "id",
+      "type": "BIGINT AUTO_INCREMENT PRIMARY KEY",
+      "note": "Unique identifier for each signup record."
+    },
+    {
+      "name": "email",
+      "type": "VARCHAR(255) UNIQUE NOT NULL",
+      "note": "User's email address. Unique constraint prevents duplicate signups. Indexed for fast lookups."
+    },
+    {
+      "name": "name",
+      "type": "VARCHAR(255) NOT NULL",
+      "note": "User's full name (student, parent, or educator)."
+    },
+    {
+      "name": "user_type",
+      "type": "ENUM('student', 'parent', 'educator') NOT NULL",
+      "note": "Distinguishes user persona (student preparing for JEE, parent, or college educator). Enables persona-specific analytics and onboarding."
+    },
+    {
+      "name": "phone",
+      "type": "VARCHAR(20) NULL",
+      "note": "Optional phone number for college outreach or follow-up contact. May be collected during signup for institutional partnerships."
+    },
+    {
+      "name": "created_at",
+      "type": "TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
+      "note": "Signup timestamp. Used for cohort analysis and trial-to-paid conversion window calculation."
+    },
+    {
+      "name": "updated_at",
+      "type": "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+      "note": "Last update timestamp (metadata changes only; does not track product platform interactions)."
+    }
+  ],
+  "relationships": [
+    {
+      "target_table": "signup_sources",
+      "type": "one-to-many",
+      "foreign_key": "signup_id",
+      "note": "Each signup may have one or more source attributions (organic, affiliate, college referral)."
+    }
+  ],
+  "notes": "This table is populated when a user completes the free-trial signup form on the marketing website. The product platform is responsible for trial lifecycle management (trial_expires_at, trial status, expiration enforcement). The marketing website database does NOT manage trial state; it only tracks the initial signup. College referrals are tracked via signup_sources, not a direct foreign key to colleges table."
+}

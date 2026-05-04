@@ -1,0 +1,56 @@
+{
+  "table": "signup_sources",
+  "instance": "mysql",
+  "purpose": "Tracks the source/channel attribution for each signup: organic search, affiliate referral, college partnership, etc. Normalized to enable multiple attributions per signup and detailed analytics.",
+  "important_fields": [
+    {
+      "name": "id",
+      "type": "BIGINT AUTO_INCREMENT PRIMARY KEY",
+      "note": "Unique identifier for each attribution record."
+    },
+    {
+      "name": "signup_id",
+      "type": "BIGINT NOT NULL (FOREIGN KEY → signups.id)",
+      "note": "Reference to the signup record. Multiple rows per signup_id allowed (e.g., both 'organic' and 'college_referral' if user found via both channels)."
+    },
+    {
+      "name": "source_type",
+      "type": "ENUM('organic', 'affiliate', 'college_referral', 'direct', 'other') NOT NULL",
+      "note": "Classification of the referral channel. Enables filtering signups by acquisition source for success metrics and ROI analysis."
+    },
+    {
+      "name": "source_identifier",
+      "type": "VARCHAR(255) NULL",
+      "note": "Additional identifier for the source: affiliate partner name, college referral_code, UTM campaign, custom promo code, etc. Enables detailed attribution per partner."
+    },
+    {
+      "name": "utm_source",
+      "type": "VARCHAR(100) NULL",
+      "note": "UTM parameter (e.g., 'google', 'facebook'). Captured from referral link if available."
+    },
+    {
+      "name": "utm_medium",
+      "type": "VARCHAR(100) NULL",
+      "note": "UTM parameter (e.g., 'cpc', 'social', 'email'). Provides additional channel context."
+    },
+    {
+      "name": "utm_campaign",
+      "type": "VARCHAR(100) NULL",
+      "note": "UTM parameter (e.g., 'jee_prep_launch'). Tracks specific campaigns or initiatives."
+    },
+    {
+      "name": "created_at",
+      "type": "TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
+      "note": "Timestamp when the attribution was recorded (usually same as signup.created_at unless backfilled)."
+    }
+  ],
+  "relationships": [
+    {
+      "target_table": "signups",
+      "type": "many-to-one",
+      "foreign_key": "signup_id",
+      "note": "Each signup_sources row references exactly one signup. Multiple sources per signup are allowed."
+    }
+  ],
+  "notes": "This normalized table enables flexible attribution tracking. For example, if a student finds the website via organic search but then clicks a college referral link, both sources can be recorded. The signup form or referral link should pass source metadata (source_type, source_identifier, UTM params) to the backend, which creates signup_sources records. This table is essential for measuring success metrics: 'trial signup rate from college referrals vs. organic', 'affiliate ROI', etc. College-referred signups are tracked by setting source_type='college_referral' and source_identifier to the college's referral_code."
+}
